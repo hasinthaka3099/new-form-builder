@@ -1,8 +1,7 @@
 import { GetFormById, GetFormWithSubmissions } from '@/actions/form';
-import FormBuilder from '@/components/FormBuilder';
 import FormLinkShare from '@/components/FormLinkShare';
 import VisitBtn from '@/components/VisitBtn';
-import React, { ElementType, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import { StatsCard } from '../../page';
 import { LuView } from 'react-icons/lu';
 import { FaWpforms } from 'react-icons/fa';

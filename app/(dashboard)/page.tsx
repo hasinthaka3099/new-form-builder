@@ -1,5 +1,4 @@
 import { GetForms, GetFormStats } from "@/actions/form";
-import Image from "next/image";
 import {LuView} from "react-icons/lu"
 import {FaEdit, FaWpforms} from "react-icons/fa"
 import {TbArrowBounce} from "react-icons/tb"

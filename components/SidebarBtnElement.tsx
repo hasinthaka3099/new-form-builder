@@ -32,14 +32,7 @@ function SidebarBtnElement({ formElement }: {formElement: FormElement}) {
 
 export function SidebarBtnElementDragOverlay({ formElement }: {formElement: FormElement}) {
     const { label,icon: Icon} = formElement.designerBtnElement;
-    const draggable = useDraggable({
-        id: `designer-btn-${formElement.type}`,
-        data: {
-            type: formElement.type,
-            isDesignerBtnElement: true,
-        }
-    })
-
+    
   return (
       <Button
           

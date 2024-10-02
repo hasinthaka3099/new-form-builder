@@ -1,6 +1,6 @@
 "use client"
 
-import React, { FormEventHandler, useState } from 'react'
+import React, { useState } from 'react'
 import DesignerSidebar from './DesignerSidebar';
 import { DragEndEvent, useDndMonitor, useDraggable, useDroppable } from "@dnd-kit/core"
 import { cn } from '@/lib/utils';
@@ -146,7 +146,7 @@ function Designer() {
 }
 
 function DesignerElementWrapper( {element}: {element:FormElementInstance} ){
-    const {removeElement, selectedElement, setSelectedElement} = useDesigner();
+    const {removeElement, setSelectedElement} = useDesigner();
     const [mouseIsOver, setMouseIsOver] = useState<boolean>(false);
     const topHalf = useDroppable({
         id: element.id + "-top",
